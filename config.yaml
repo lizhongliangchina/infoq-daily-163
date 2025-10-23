@@ -35,7 +35,7 @@ email:
   method: "smtp"
   subject_prefix: "InfoQ 日报线索"
   from_email: "m15711342802@163.com"
-  to_emails: ["m15711342802@163.com,15525148302@163.com"]
+  to_emails: ["m15711342802@163.com", "15525148302@163.com"]
   smtp:
     host: "smtp.163.com"
     port: 465
