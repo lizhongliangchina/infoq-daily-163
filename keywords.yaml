@@ -1,0 +1,164 @@
+
+# keywords.yaml
+categories:
+  "AI/LLM":
+    - llm
+    - large language model
+    - agent
+    - rag
+    - retrieval augmented
+    - prompt
+    - fine-tuning
+    - sft
+    - reinforcement learning
+    - transformers
+    - openai
+    - anthropic
+    - llama
+    - mistral
+    - nvidia
+    - cuda
+    - tensorrt
+    - gpu
+    - tokenizer
+    - diffusion
+    - 多模态
+    - 大模型
+    - 智能体
+    - 提示词
+    - 微调
+    - 评测
+  "CloudNative":
+    - kubernetes
+    - k8s
+    - containerd
+    - istio
+    - envoy
+    - eBPF
+    - cloud native
+    - serverless
+    - observability
+    - sre
+    - devops
+    - cloudflare
+    - eks
+    - gke
+    - aks
+    - 云原生
+    - 可观测性
+    - 服务网格
+  "Security":
+    - cve
+    - vulnerability
+    - supply chain
+    - npm
+    - pip
+    - maven
+    - malware
+    - ransomware
+    - xss
+    - csrf
+    - zero-day
+    - 供应链
+    - 漏洞
+    - 安全
+  "Architecture":
+    - architecture
+    - microservices
+    - monolith
+    - scalability
+    - cost
+    - performance
+    - throughput
+    - latency
+    - design
+    - api
+    - 数据架构
+    - 架构
+    - 可扩展性
+    - 成本
+    - 性能
+  "Data":
+    - data lake
+    - datalake
+    - lakehouse
+    - data warehouse
+    - clickhouse
+    - spark
+    - flink
+    - iceberg
+    - hudi
+    - delta lake
+    - 数据湖
+    - 数据仓库
+    - 大数据
+  "OpenSource":
+    - open source
+    - oss
+    - apache
+    - linux
+    - kernel
+    - foundation
+    - 开源
+  "Frontend":
+    - javascript
+    - typescript
+    - react
+    - vue
+    - next.js
+    - vite
+    - webassembly
+    - wasm
+    - 前端
+  "Hardware/Chip":
+    - gpu
+    - npu
+    - cpu
+    - risc-v
+    - pci-e
+    - memory
+    - dram
+    - hbm
+    - chiplet
+    - 芯片
+    - 硬件
+
+category_weights:
+  "AI/LLM": 1.0
+  "CloudNative": 0.9
+  "Security": 1.0
+  "Architecture": 0.8
+  "Data": 0.8
+  "OpenSource": 0.7
+  "Frontend": 0.6
+  "Hardware/Chip": 0.7
+
+angle_bank:
+  "AI/LLM":
+    - 企业落地路径：工具链与评测方法
+    - 成本/速度量化：与上一代模型对比
+    - 研发效能：Agent 如何改造 DevOps/SRE
+  "CloudNative":
+    - 架构影响：对流量/弹性/可观测性的具体改变
+    - 迁移与兼容：老系统如何平滑上云
+  "Security":
+    - 影响面与缓解建议：对开发者的改动点
+    - 供应链风险：CI/CD 与依赖治理
+  "Architecture":
+    - 方案权衡：性能、成本、复杂度三角
+    - 成功/失败复盘：SLA 与容量规划
+  "Data":
+    - 性能与成本：引擎/格式/算力的最佳组合
+    - 数据治理：质量、血缘与合规
+  "OpenSource":
+    - 版本里程碑与路线图
+    - 生态兼容与贡献者动态
+  "Frontend":
+    - DX 提升：构建速度、框架互操作
+    - 体积与性能：SSR/边缘渲染策略
+  "Hardware/Chip":
+    - 性能/能效对 AI 训练与推理的影响
+    - 供应链与产能：对云成本的传导
+  "_general_":
+    - 国内外对比：可替代性/生态差异
+    - 风险与限制：合规、隐私与长期可维护性

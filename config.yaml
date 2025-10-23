@@ -1,0 +1,65 @@
+
+# 使用网易 163 邮箱通过 SMTP 发送
+sources:
+  - "https://news.ycombinator.com/?p=4"
+  - "https://techcrunch.com/latest/?offset=10"
+  - "https://www.theverge.com/"
+  - "https://slashdot.org/"
+  - "https://www.engadget.com/"
+  - "https://arstechnica.com/"
+  - "https://techmeme.com/"
+time_decay_hours: 18
+topk: 10
+mmr_lambda: 0.7
+buckets:
+  "AI/LLM": {max: 4}
+  "CloudNative": {max: 3}
+  "Security": {max: 2}
+  "Architecture": {min: 1}
+weights:
+  heat: 0.17
+  relevance: 0.18
+  velocity: 0.10
+  corroboration: 0.08
+  originality: 0.08
+  practicality: 0.12
+  impact: 0.10
+  depth: 0.06
+  novelty: 0.05
+  authority: 0.05
+  diversity_bonus: 0.01
+  fatigue: 0.06
+  spam_risk: 0.09
+
+email:
+  method: "smtp"
+  subject_prefix: "InfoQ 日报线索"
+  from_email: "m15711342802@163.com"
+  to_emails: ["m15711342802@163.com,15525148302@163.com"]
+  smtp:
+    host: "smtp.163.com"
+    port: 465
+    user: "m15711342802@163.com"
+    # 不建议把授权码写进仓库：用环境变量 SMTP_PASSWORD 注入更安全
+    # password: "你的客户端授权密码"
+    use_tls: false
+    use_ssl: true
+
+keywords_path: "keywords.yaml"
+
+# 域名白/黑名单（可自行增改）
+whitelist_domains:
+  - "openai.com"
+  - "anthropic.com"
+  - "ai.google"
+  - "deepmind.com"
+  - "cloud.google.com"
+  - "github.com"
+  - "arxiv.org"
+  - "kubernetes.io"
+  - "pytorch.org"
+  - "nvidia.com"
+  - "techmeme.com"
+blacklist_domains:
+  - "clickbait.example"
+  - "rumor.example"
