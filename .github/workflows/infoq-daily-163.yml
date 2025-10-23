@@ -14,6 +14,6 @@ jobs:
           python-version: "3.11"
       - run: pip install -r requirements.txt
       - env:
-          GATE_PACIFIC_8AM: "true"   # 临时想立刻测试可改成 "false"
+          GATE_PACIFIC_8AM: "false"   # 临时想立刻测试可改成 "false"
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         run: python daily_infoq_leads.py
